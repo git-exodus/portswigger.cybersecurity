@@ -19,4 +19,18 @@ Alternatively and automaticly use the Burp Scanner to find the majority of SQL i
 
 ```bash
 ```
+
+## Lab: SQL injection vulnerability allowing login bypass
+This lab contains a SQL injection vulnerability in the login function.\
+To solve the lab, perform a SQL injection attack that logs in to the application as the administrator user.\
+
+---Solution---\
+Username\
+|------------------| > Administrator'--\
+Password\
+|------------------| (anything) gets commented out
+
+
+
 </details>
+
