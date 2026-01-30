@@ -7,7 +7,7 @@ controlled environment for educational or security assessment purposes.
 ## SQL injections (SQLi)
 
 <details>
-<summary style="cursor:pointer">Loading from memory</summary>
+<summary style="cursor:pointer">SQLi</summary>
 Manuell detection
 - The single quote character ' and look for errors or other anomalies.
 - Some SQL-specific syntax that evaluates to the base (original) value of the entry point, and to a different value, and look for systematic differences in the application responses.
@@ -24,13 +24,22 @@ Alternatively and automaticly use the Burp Scanner to find the majority of SQL i
 This lab contains a SQL injection vulnerability in the login function.\
 To solve the lab, perform a SQL injection attack that logs in to the application as the administrator user.\
 
----Solution---\
+### Solution
+```
 Username\
 |------------------| > Administrator'--\
 Password\
 |------------------| (anything) gets commented out
+```
 
+## Lab: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data
+This lab contains a SQL injection vulnerability in the product category filter. When the user selects a category, the application carries out a SQL query like the following:
+```
+SELECT * FROM products WHERE category = 'Gifts' AND released = 1
+```
+To solve the lab, perform a SQL injection attack that causes the application to display one or more unreleased products.
 
+### Solution
 
 </details>
 
