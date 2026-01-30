@@ -1,6 +1,6 @@
 # Ethical Considerations
-Remember that hacking into devices without permission is illegal and unethical. 
-Always ensure you have the necessary permissions and are conducting these activities in a 
+Remember that hacking into devices without permission is illegal and unethical.\
+Always ensure you have the necessary permissions and are conducting these activities in a\
 controlled environment for educational or security assessment purposes.
 
 # Topics
